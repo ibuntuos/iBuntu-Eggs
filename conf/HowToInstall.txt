@@ -1,0 +1,35 @@
+# (c)2022-07-04
+# Release: 1.4 Alpha 2
+# 
+# Release Notes:
+# All Updates included for Ubuntu 18.04.6
+# Removed Stacer because not necessarry anymore
+# Removed LibreOffice - if you need it just install it
+# Removed Evolution - again: if you want a Mailprogramm, get one.
+# Standard Theme now is from MacOS: Big Sur
+####################################################################
+
+!! Important: If you want to install Catalinux within VirtualBox !!
+
+Make sure you have the switch "Live-CD/DVD" selected, otherwise you
+will face a hanging system when shutdown.
+
+####################################################################
+
+To install iBuntu 1.4 Catalinux:
+
+* Select Install iBuntu 1.4 Catalinux
+* Follow the instructions
+* After installation, chose "restart" - and constantly hit "enter", 
+  even when you might won't see the iBuntu Logo but some "SQUASHFS" 
+  Error-Messages - keep hitting "enter". If that doesn't help your
+  system to reboot - switch it off manually, remove the installation
+  medium and boot again - everything should work fine than.
+
+ 
+Have fun.
+
+
+BOfH
+https://ibuntuos.com
+####################################################################

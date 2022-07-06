@@ -1,0 +1,9 @@
+[Unit]
+Description=ibuntu_releaseinfo
+
+[Service]
+ExecStart=/etc/init.d/ib-release.sh
+
+[Install]
+WantedBy=default.target
+

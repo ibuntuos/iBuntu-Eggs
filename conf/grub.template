@@ -1,0 +1,30 @@
+#
+# eggs: grub.template.cfg
+#
+
+if loadfont $prefix/font.pf2 ; then
+  set gfxmode=640x480
+  insmod efi_gop
+  insmod efi_uga
+  insmod video_bochs
+  insmod video_cirrus
+  insmod gfxterm
+  insmod jpeg
+  insmod png
+  terminal_output gfxterm
+fi
+
+set theme=/boot/grub/theme.cfg
+
+menuentry "Install {{{fullname}}}" {
+    set gfxpayload=keep
+    {{{rmModules}}}
+    linux {{{vmlinuz}}} {{{kernel_parameters}}} fsck.mode=skip quiet splash --
+    initrd {{{initrdImg}}} 
+}
+menuentry "{{{fullname}}} safe" {
+  set gfxpayload=keep
+  {{{rmModules}}}
+  linux {{{vmlinuz}}} {{{kernel_parameters}}}
+  initrd {{{initrdImg}}} 
+}
