@@ -11,7 +11,7 @@ fi
 count="`cat /usr/lib/penguins-eggs/boot_count.txt`"
 
 
-if [ $count -le 3 ]
+if [ $count -le 2 ]
 then
    cp /etc/default/grub.ibuntu /etc/default/grub
    update-grub
@@ -19,9 +19,10 @@ then
    echo $count > /usr/lib/penguins-eggs/boot_count.txt
 fi
 
-if [ $count -gt 3 ]
+if [ $count -gt 2 ]
 then
    systemctl disable ibuntu_grub.service
    rm /etc/systemd/system/ibuntu_grub.service
    rm /etc/init.d/ibuntu_grub.sh
+   rm -rf /home/*/Desktop/HowToInstall.txt
 fi
