@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Hard Reboot
+GenericName=Hard Reboot
+Keywords=system;shutdown;
+Exec=sh -c "pkexec /usr/lib/penguins-eggs/poweroff.sh"
+Comment=
+Icon=/usr/lib/penguins-eggs/restart_icon.png
+Terminal=true
+

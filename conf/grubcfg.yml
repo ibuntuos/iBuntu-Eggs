@@ -21,7 +21,7 @@
 ---
 # If set to true, always creates /etc/default/grub from scratch even if the file
 # already existed. If set to false, edits the existing file instead.
-overwrite: false
+overwrite: true
 
 # If set to true, prefer to write files in /etc/default/grub.d/
 # rather than the single file /etc/default/grub. If this is set,

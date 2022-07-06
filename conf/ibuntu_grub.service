@@ -1,0 +1,10 @@
+[Unit]
+Description=ibuntu_grubrenew
+After=network.target
+
+[Service]
+ExecStart=/etc/init.d/ibuntu_grub.sh
+
+[Install]
+WantedBy=default.target
+

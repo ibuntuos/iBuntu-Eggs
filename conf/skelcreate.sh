@@ -73,7 +73,7 @@ echo "sudo rm /etc/skel/.config/user-dirs.*"
 sudo rm /etc/skel/.config/user-dirs.*
 echo "sudo rm /etc/skel/.config/monitors.*"
 sudo rm /etc/skel/.config/monitors.*
-sudo rm /etc/skel/.config/google.*
+sudo rm -R /etc/skel/.config/google*
 echo "### Make Desktop-File for Installer ###"
 sudo cp -r /home/$LIVEUSER/Desktop /etc/skel
 sudo chmod -R 777 /etc/skel
