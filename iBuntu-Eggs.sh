@@ -19,7 +19,7 @@ sudo eggs calamares --install
 #"Remove Penguines-Eggs Icons and stuff"
 echo "========================================================================"
 echo "Remove Penguines-Eggs Icons and stuff"
-sleep 3 
+sleep 3
 sudo rm /usr/share/applications/calamares.desktop
 sudo rm /usr/share/applications/penguins-eggs.desktop
 
@@ -68,24 +68,25 @@ sudo cp $BASEDIR/conf/ib-release.sh /etc/init.d/
 sudo chmod 744 /etc/init.d/ib-release.sh
 sudo chmod 664 /etc/systemd/system/ib-release.service
 sudo systemctl daemon-reload
-sudo systemctl enable ib-release.service 
+sudo systemctl enable ib-release.service
 
 sudo cp $BASEDIR/conf/ibuntu_grub.service /etc/systemd/system/
 sudo cp $BASEDIR/conf/ibuntu_grub.sh /etc/init.d/
 sudo chmod 744 /etc/init.d/ibuntu_grub.sh
 sudo chmod 664 /etc/systemd/system/ibuntu_grub.service
 sudo systemctl daemon-reload
-sudo systemctl enable ibuntu_grub.service 
+sudo systemctl enable ibuntu_grub.service
+sudo rm /usr/lib/penguins-eggs/boot_count.txt
 
 #Replace the Penguines-Eggs branding and the ovary control class with the modified ones
 echo "========================================================================"
 echo "Replace the Penguines-Eggs branding and the ovary control class with the modified ones"
 sleep 2
-sudo mv /usr/lib/penguins-eggs/lib/classes/incubation/branding.js /usr/lib/penguins-eggs/lib/classes/incubation/branding_eggs.js 
+sudo mv /usr/lib/penguins-eggs/lib/classes/incubation/branding.js /usr/lib/penguins-eggs/lib/classes/incubation/branding_eggs.js
 sudo cp $BASEDIR/conf/branding.js /usr/lib/penguins-eggs/lib/classes/incubation/
-sudo mv /usr/lib/penguins-eggs/lib/classes/ovary.js /usr/lib/penguins-eggs/lib/classes/ovary_eggs.js 
+sudo mv /usr/lib/penguins-eggs/lib/classes/ovary.js /usr/lib/penguins-eggs/lib/classes/ovary_eggs.js
 sudo cp $BASEDIR/conf/ovary.js /usr/lib/penguins-eggs/lib/classes/
-#sudo mv /usr/lib/penguins-eggs/conf/exclude.list /usr/lib/penguins-eggs/conf/exclude_eggs.list 
+#sudo mv /usr/lib/penguins-eggs/conf/exclude.list /usr/lib/penguins-eggs/conf/exclude_eggs.list
 #sudo cp $BASEDIR/conf/exclude.list /usr/lib/penguins-eggs/conf/
 
 #Remove Build-Directory if still existant, install grub-efi if not yet done
@@ -104,7 +105,7 @@ sudo touch /etc/gdm3/custom.conf
 echo "========================================================================"
 echo "Main Procedure: Calling Eggs to remaster the system and create an iso"
 sleep 4
-sudo eggs produce -vm --release --theme ibuntu 
+sudo eggs produce -vm --release --theme ibuntu
 
 
 #Copy the finished ISO to the Guest-Desktop
@@ -112,8 +113,3 @@ sudo cp /home/eggs/*.iso /media/sf_Desktop/
 
 
 echo "Remastering successful!"
-
-
-
-
-

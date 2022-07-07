@@ -14,13 +14,11 @@ count="`cat /usr/lib/penguins-eggs/boot_count.txt`"
 if [ $count -le 1 ]
 then
    echo "update-grub"
-   echo "do reboot"
    cp /etc/default/grub.ibuntu /etc/default/grub
    update-grub
    count=`expr $count + 1`
    echo $count > /usr/lib/penguins-eggs/boot_count.txt
    sleep 3
-   reboot
 fi
 
 if [ $count -gt 1 ]
