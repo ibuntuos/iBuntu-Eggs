@@ -65,11 +65,15 @@ echo "Initialize the new ib-release file"
 sleep 2
 sudo cp $BASEDIR/conf/ib-release.service /etc/systemd/system/
 sudo cp $BASEDIR/conf/ib-release.sh /etc/init.d/
+sudo chmod 744 /etc/init.d/ib-release.sh
+sudo chmod 664 /etc/systemd/system/ib-release.service
 sudo systemctl daemon-reload
 sudo systemctl enable ib-release.service 
 
 sudo cp $BASEDIR/conf/ibuntu_grub.service /etc/systemd/system/
 sudo cp $BASEDIR/conf/ibuntu_grub.sh /etc/init.d/
+sudo chmod 744 /etc/init.d/ibuntu_grub.sh
+sudo chmod 664 /etc/systemd/system/ibuntu_grub.service
 sudo systemctl daemon-reload
 sudo systemctl enable ibuntu_grub.service 
 
