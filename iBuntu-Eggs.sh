@@ -31,9 +31,9 @@ sudo cp -R $BASEDIR/conf/ibuntu /etc/penguins-eggs.d/addons/
 sudo cp $BASEDIR/conf/eggs.yaml /etc/penguins-eggs.d/
 sudo cp $BASEDIR/conf/isolinux.template /etc/penguins-eggs.d/addons/templates/
 sudo cp $BASEDIR/conf/grub.template /etc/penguins-eggs.d/addons/templates/
-sudo cp $BASEDIR/conf/HowToInstall.txt /home/ibuntu/Desktop/
-sudo cp $BASEDIR/conf/grubcfg.yaml /etc/penguins-eggs.d/distros/bionic/calamares/calamares-modules/grubcfg/grubcfg.yml
-sudo chown ibuntu /home/ibuntu/Desktop/HowToInstall.txt
+# sudo cp $BASEDIR/conf/HowToInstall.txt /home/ibuntu/Desktop/
+#sudo cp $BASEDIR/conf/grubcfg.yaml /etc/penguins-eggs.d/distros/bionic/calamares/calamares-modules/grubcfg/grubcfg.yml
+#sudo chown ibuntu /home/ibuntu/Desktop/HowToInstall.txt
 sudo mv /usr/lib/penguins-eggs/assets/penguins-eggs.desktop /usr/lib/penguins-eggs/assets/penguins-eggs_trash.desktop
 echo "========================================================================"
 echo "For calamares config, just say yes once:"
@@ -44,12 +44,12 @@ sudo eggs calamares --theme ibuntu
 
 #Fix for SQUASFS-Error: Provide hard Shutdown
 echo "Fix for SQUASFS-Error: Provide hard Shutdown"
-sudo cp $BASEDIR/conf/restart_icon.png /usr/lib/penguins-eggs/
-sudo cp $BASEDIR/conf/poweroff.sh /usr/lib/penguins-eggs/
-sudo cp $BASEDIR/conf/reboot.desktop /usr/share/applications
-echo "The Hard Reboot will be opened. Right click on Keep in Dock"
-gtk-launch reboot
-sleep 10
+#sudo cp $BASEDIR/conf/restart_icon.png /usr/lib/penguins-eggs/
+#sudo cp $BASEDIR/conf/poweroff.sh /usr/lib/penguins-eggs/
+#sudo cp $BASEDIR/conf/reboot.desktop /usr/share/applications
+#echo "The Hard Reboot will be opened. Right click on Keep in Dock"
+#gtk-launch reboot
+#sleep 10
 
 #Mount the "sf_Desktop" for VMWorkstation, Clean the Snaps and create the Skel Folder
 echo "========================================================================"
@@ -70,22 +70,22 @@ sudo chmod 664 /etc/systemd/system/ib-release.service
 sudo systemctl daemon-reload
 sudo systemctl enable ib-release.service 
 
-sudo cp $BASEDIR/conf/ibuntu_grub.service /etc/systemd/system/
-sudo cp $BASEDIR/conf/ibuntu_grub.sh /etc/init.d/
-sudo chmod 744 /etc/init.d/ibuntu_grub.sh
-sudo chmod 664 /etc/systemd/system/ibuntu_grub.service
-sudo systemctl daemon-reload
-sudo systemctl enable ibuntu_grub.service 
-sudo rm /usr/lib/penguins-eggs/boot_count.txt
+#sudo cp $BASEDIR/conf/ibuntu_grub.service /etc/systemd/system/
+#sudo cp $BASEDIR/conf/ibuntu_grub.sh /etc/init.d/
+#sudo chmod 744 /etc/init.d/ibuntu_grub.sh
+#sudo chmod 664 /etc/systemd/system/ibuntu_grub.service
+#sudo systemctl daemon-reload
+#sudo systemctl enable ibuntu_grub.service 
+#sudo rm /usr/lib/penguins-eggs/boot_count.txt
 
 #Replace the Penguines-Eggs branding and the ovary control class with the modified ones
 echo "========================================================================"
 echo "Replace the Penguines-Eggs branding and the ovary control class with the modified ones"
 sleep 2
-sudo mv /usr/lib/penguins-eggs/lib/classes/incubation/branding.js /usr/lib/penguins-eggs/lib/classes/incubation/branding_eggs.js 
-sudo cp $BASEDIR/conf/branding.js /usr/lib/penguins-eggs/lib/classes/incubation/
-sudo mv /usr/lib/penguins-eggs/lib/classes/ovary.js /usr/lib/penguins-eggs/lib/classes/ovary_eggs.js 
-sudo cp $BASEDIR/conf/ovary.js /usr/lib/penguins-eggs/lib/classes/
+#sudo mv /usr/lib/penguins-eggs/lib/classes/incubation/branding.js /usr/lib/penguins-eggs/lib/classes/incubation/branding_eggs.js 
+#sudo cp $BASEDIR/conf/branding.js /usr/lib/penguins-eggs/lib/classes/incubation/
+#sudo mv /usr/lib/penguins-eggs/lib/classes/ovary.js /usr/lib/penguins-eggs/lib/classes/ovary_eggs.js 
+#sudo cp $BASEDIR/conf/ovary.js /usr/lib/penguins-eggs/lib/classes/
 #sudo mv /usr/lib/penguins-eggs/conf/exclude.list /usr/lib/penguins-eggs/conf/exclude_eggs.list 
 #sudo cp $BASEDIR/conf/exclude.list /usr/lib/penguins-eggs/conf/
 
@@ -98,7 +98,7 @@ sudo apt install -y grub-efi-amd64-bin
 
 #Minor fix to Penguines-Eggs running into error when no "custom.conf" exists
 echo "Minor fix to Penguines-Eggs running into error when no custom.conf exists"
-sudo touch /etc/gdm3/custom.conf
+#sudo touch /etc/gdm3/custom.conf
 
 
 #Main Procedure: Calling Eggs to remaster the system and create an iso

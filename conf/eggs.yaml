@@ -1,8 +1,8 @@
-version: 9.1.32
+version: 9.1.35
 snapshot_dir: /home/eggs/
 snapshot_prefix: iBuntu-
 snapshot_excludes: /usr/local/share/penguins-eggs/exclude.list
-snapshot_basename: Catalinux_1.4
+snapshot_basename: LixSur_2.1
 user_opt: ibuntu
 user_opt_passwd: ibuntu
 root_passwd: ibuntu
