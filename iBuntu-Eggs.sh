@@ -43,7 +43,7 @@ sudo eggs calamares --theme ibuntu
 
 
 #Fix for SQUASFS-Error: Provide hard Shutdown
-echo "Fix for SQUASFS-Error: Provide hard Shutdown"
+#echo "Fix for SQUASFS-Error: Provide hard Shutdown"
 #sudo cp $BASEDIR/conf/restart_icon.png /usr/lib/penguins-eggs/
 #sudo cp $BASEDIR/conf/poweroff.sh /usr/lib/penguins-eggs/
 #sudo cp $BASEDIR/conf/reboot.desktop /usr/share/applications
@@ -82,8 +82,8 @@ sudo systemctl enable ib-release.service
 echo "========================================================================"
 echo "Replace the Penguines-Eggs branding and the ovary control class with the modified ones"
 sleep 2
-#sudo mv /usr/lib/penguins-eggs/lib/classes/incubation/branding.js /usr/lib/penguins-eggs/lib/classes/incubation/branding_eggs.js 
-#sudo cp $BASEDIR/conf/branding.js /usr/lib/penguins-eggs/lib/classes/incubation/
+sudo mv /usr/lib/penguins-eggs/lib/classes/incubation/branding.js /usr/lib/penguins-eggs/lib/classes/incubation/branding_eggs.js 
+sudo cp $BASEDIR/conf/branding.js /usr/lib/penguins-eggs/lib/classes/incubation/
 #sudo mv /usr/lib/penguins-eggs/lib/classes/ovary.js /usr/lib/penguins-eggs/lib/classes/ovary_eggs.js 
 #sudo cp $BASEDIR/conf/ovary.js /usr/lib/penguins-eggs/lib/classes/
 #sudo mv /usr/lib/penguins-eggs/conf/exclude.list /usr/lib/penguins-eggs/conf/exclude_eggs.list 
@@ -97,7 +97,7 @@ sudo rm -R /home/eggs
 sudo apt install -y grub-efi-amd64-bin
 
 #Minor fix to Penguines-Eggs running into error when no "custom.conf" exists
-echo "Minor fix to Penguines-Eggs running into error when no custom.conf exists"
+#echo "Minor fix to Penguines-Eggs running into error when no custom.conf exists"
 #sudo touch /etc/gdm3/custom.conf
 
 
@@ -113,7 +113,7 @@ sudo cp /home/eggs/*.iso /media/sf_Desktop/
 
 
 echo "Remastering successful!"
-
+sleep 5
 
 
 

@@ -19,17 +19,17 @@ function branding(remix, distro, brand = '', verbose = false) {
     const homeUrl = 'https://ibuntuos.com';
     const supportUrl = 'https://ibuntuos.com';
     const bugReportUrl = 'https://ibuntuos.com';
-    const productName = 'iBuntu Catalinux';
+    const productName = 'iBuntu Lix Sur';
     const shortProductName = 'iBuntu OS';
     //const today = new Date();
     //const day = ('0' + today.getDate()).slice(-2);
     //const month = ('0' + (today.getMonth() + 1)).slice(-2);
     //const year = today.getFullYear();
     //const version = year + '-' + month + '-' + day;
-    const version ='1.4';
-    const shortVersion = 'Catalinux';
+    const version ='2.1';
+    const shortVersion = 'Lix Sur';
     const versionedName = productName + ' ' + version; // Questa la mette nella descrizione andrebbe aggiunta la versione dal nome della iso
-    const shortVersionedName = 'iBuntu Catalinux';
+    const shortVersionedName = 'iBuntu Lix Sur';
     let bootloaderEntryName = versionedName;
     // Necessario: Devuan, LMDE, caraco, syslinuxos devono avere EFI=Debian altrimenti non funziona EFI
     switch (distro.distroId.toLowerCase()) {
