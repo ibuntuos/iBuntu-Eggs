@@ -1,0 +1,27 @@
+---
+componentName: ibuntu
+
+strings:
+    productName:         iBuntu Catalinux
+    shortProductName:    iBuntu OS
+    version:             1.4
+    shortVersion:        Catalinux
+    versionedName:       iBuntu Catalinux
+    shortVersionedName:  iBuntu Catalinux
+    bootloaderEntryName: iBuntu Catalinux
+    productUrl:          https://ibuntuos.com/
+    supportUrl:          https://ibuntuos.com/
+    knownIssuesUrl:      https://ibuntuos.com/
+    releaseNotesUrl:     https://ibuntuos.com/
+
+images:
+    productLogo:         "logo.png"
+    productIcon:         "icon.png"
+    productWelcome:      "welcome.png"
+
+slideshow:               "show.qml"
+
+style:
+   sidebarBackground:    "#808080"
+   sidebarText:          "#FFFFFF"
+   sidebarTextSelect:    "#788694"

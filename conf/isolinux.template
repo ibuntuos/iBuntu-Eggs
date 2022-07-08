@@ -1,0 +1,29 @@
+# eggs: isolinux.cfg
+#
+
+# search path for the c32 support libraries (libcom32, libutil etc.)
+path 
+include isolinux.theme.cfg
+default vesamenu.c32
+prompt 0
+timeout 200
+#
+#
+
+label default
+  menu label Install {{{fullname}}}
+  menu default
+  say "Booting {{{fullname}}}"
+  linux {{{vmlinuz}}} 
+  append initrd={{{initrdImg}}} {{{kernel_parameters}}} fsck.mode=skip quiet splash --
+
+label safe
+  menu label {{{fullname}}} Safemode
+  say "Booting {{{fullname}}}"
+  linux {{{vmlinuz}}} 
+  append initrd={{{initrdImg}}} {{{kernel_parameters}}}
+
+label boot from local disk
+  com32 chain.c32
+  append hd1 1 swap
+  
