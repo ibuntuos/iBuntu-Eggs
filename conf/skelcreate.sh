@@ -71,9 +71,23 @@ echo "sudo cp -r /home/$LIVEUSER/snap /etc/skel"
 sudo cp -r /home/$LIVEUSER/snap /etc/skel
 echo "sudo rm /etc/skel/.config/user-dirs.*"
 sudo rm /etc/skel/.config/user-dirs.*
+echo "sudo rm/etc/skel/*/nautilus"
+sudo rm -rf /etc/skel/*/nautilus
+sudo rm -rf /etc/skel/*/dolphin
+sudo rm -rf /etc/skel/.config/gtk-3.0/bookmarks
+#sudo rm -R /etc/skel/.config/
 echo "sudo rm /etc/skel/.config/monitors.*"
-sudo rm /etc/skel/.config/monitors.*
-sudo rm -R /etc/skel/.config/google*
+sudo rm -rf /etc/skel/.config/monitors.*
+sudo rm -rf /etc/skel/.config/google-chrome
+sudo rm -rf /etc/skel/.local/share/recently-used*
+sudo rm /etc/skel/snap/gnome-system-monitor/174/.config/user-dirs.dirs
+sudo rm /etc/skel/snap/gnome-system-monitor/174/.config/user-dirs.dirs
+sudo rm -R /etc/skel/snap/gnome-system-monitor/174/.config/gtk-3.0/bookmarks
+
+
 echo "### Make Desktop-File for Installer ###"
 sudo cp -r /home/$LIVEUSER/Desktop /etc/skel
 sudo chmod -R 777 /etc/skel
+
+sleep 3
+sudo rm -rf /etc/skel/.local/share/recently-used*

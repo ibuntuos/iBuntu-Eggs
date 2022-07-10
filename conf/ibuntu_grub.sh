@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "Replace OS grub with ibuntubuilder's custom grub"
-sleep 3
-count=1
+count=0
 
 if [ ! -f /usr/lib/penguins-eggs/boot_count.txt ]; then
     echo $count > /usr/lib/penguins-eggs/boot_count.txt
@@ -18,7 +17,7 @@ then
    update-grub
    count=`expr $count + 1`
    echo $count > /usr/lib/penguins-eggs/boot_count.txt
-   sleep 3
+#   reboot
 fi
 
 if [ $count -gt 1 ]
@@ -30,5 +29,4 @@ then
    rm -rf /home/*/Desktop/HowToInstall.txt
    rm -rf /usr/share/applications/reboot.desktop
    echo "System is ready to use!"
-   sleep 3
 fi

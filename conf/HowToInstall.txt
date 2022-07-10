@@ -13,23 +13,23 @@ To install iBuntu 1.4 Catalinux:
 
 * Run "Install iBuntu 1.4 Catalinux" from Desktop or Launchpad
 * Follow the instructions
-* After installation, click the "Hard Reboot" icon (the blue icon 
-  with the white circled arrow in it) - located in the very
-  right of the Dock - orr through the Launchpad
+* After installation, click the "Hard Reboot" icon in the very
+  right of the Dock or through the Launchpad
 * A prompt asks you for a password. Just enter: ibuntu
 ####################################################################
 
-* IMPORTANT: Do NOT try to restart the Live-CD after installation
-  other than with the "Hard Reboot" function!!!!!!
-  
-  If you try to restart the Live-CD like you would with the normal 
-  Installation of iBuntu, it will lead you to 
-  "SQUASHFS" error messages and your system will hang up during 
-  reboot and you will need to power off your machine by hand!
-
+* IMPORTANT: Do NOT try to restart the system otherwise. 
+  It will lead you to "SQUASHFS" error messages and you will have to
+  power off your machine by hand!!!!!
   This is a known bug for Ubuntu 18.04.6 with Kernl 5.4.0-121
   Therefore we provided you this "Hard Reboot" option, to shut down
   the Live-System after you are finished with installation.
+
+* The Splash-Screen won't be visible until you once rebootet the
+  freshly installed system from Live-System with "Hard Reboot" 
+  (or manually switching off the machine by hand), than reboot
+  into the newly installed iBuntu Catalinux and than perform a 
+  "normal" Restart from there. 
 
 
 Have fun.
