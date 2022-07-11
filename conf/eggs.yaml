@@ -19,5 +19,5 @@ locales:
   - en_US.UTF-8
 pmount_fixed: false
 machine_id: 3499a4e5ccbe43579a4a61d1d9748349
-vmlinuz: /boot/vmlinuz-5.4.0-121-generic
-initrd_img: /boot/initrd.img-5.4.0-121-generic
+vmlinuz: /boot/vmlinuz-5.4.0-122-generic
+initrd_img: /boot/initrd.img-5.4.0-122-generic

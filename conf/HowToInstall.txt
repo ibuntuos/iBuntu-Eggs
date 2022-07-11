@@ -1,16 +1,17 @@
-# (c)2022-07-06
+# (c)2022-07-11
 # Release: 1.4
 # 
 # Release Notes:
 # All Updates included for Ubuntu 18.04.6
 # The iBuntu Update Tool is now the latest Version
 # Removed Stacer because not necessarry anymore
-# REmoved Balena Etcher since it's part of the Update Tool already
+# Removed Balena Etcher since it's part of the Update Tool already
 # Removed LibreOffice - if you need it just install it
 # Removed Evolution - chose and install your own favorit Mailprogram
 # Removed VLC and replaced with SMPlayer due to compatibility
+# Screensaver now deactivated by default
 # Installer changed to Calamares for compatiblity reasons
-# Standard Theme für Catalinuix now is from MacOS: Big Sur
+# Standard Theme for Catalinuix now is from MacOS: Big Sur
 # For Touch-Gestures the tool "Gestures" was replaced with Fusuma
 ####################################################################
 
@@ -26,7 +27,7 @@ To install iBuntu 1.4 Catalinux:
 * IMPORTANT: Do NOT try to restart the system otherwise. 
   It will lead you to "SQUASHFS" error messages and you will have to
   power off your machine by hand!!!!!
-  This is a known bug for Ubuntu 18.04.6 with Kernl 5.4.0-121
+  This is a known bug for Ubuntu 18.04.6 with Kernl 5.4.0-122
   Therefore we provided you this "Hard Reboot" option, to shut down
   the Live-System after you are finished with installation.
 

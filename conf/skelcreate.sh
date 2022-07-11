@@ -87,7 +87,8 @@ sudo rm -R /etc/skel/snap/gnome-system-monitor/174/.config/gtk-3.0/bookmarks
 
 echo "### Make Desktop-File for Installer ###"
 sudo cp -r /home/$LIVEUSER/Desktop /etc/skel
-sudo chmod -R 777 /etc/skel
+sudo chmod -R 777 /etc/skel/
+sudo chmod -x+X /etc/skel/Desktop/HowToInstall.txt
 
 sleep 3
 sudo rm -rf /etc/skel/.local/share/recently-used*
