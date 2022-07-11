@@ -34,6 +34,7 @@ sudo cp $BASEDIR/conf/grub.template /etc/penguins-eggs.d/addons/templates/
 sudo cp $BASEDIR/conf/HowToInstall.txt /home/ibuntu/Desktop/
 sudo chown ibuntu /home/ibuntu/Desktop/HowToInstall.txt
 sudo mv /usr/lib/penguins-eggs/assets/penguins-eggs.desktop /usr/lib/penguins-eggs/assets/penguins-eggs_trash.desktop
+sudo cp $BASEDIR/conf/users.yml /etc/penguins-eggs.d/distros/bionic/calamares/modules/
 echo "========================================================================"
 echo "For calamares config, just say yes once:"
 sleep 3
@@ -104,7 +105,7 @@ sudo touch /etc/gdm3/custom.conf
 echo "========================================================================"
 echo "Main Procedure: Calling Eggs to remaster the system and create an iso"
 sleep 4
-sudo eggs produce -vm --release --theme ibuntu 
+sudo eggs produce -vm --theme ibuntu 
 
 
 #Copy the finished ISO to the Guest-Desktop

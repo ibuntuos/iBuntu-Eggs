@@ -3,10 +3,15 @@
 # 
 # Release Notes:
 # All Updates included for Ubuntu 18.04.6
+# The iBuntu Update Tool is now the latest Version
 # Removed Stacer because not necessarry anymore
+# REmoved Balena Etcher since it's part of the Update Tool already
 # Removed LibreOffice - if you need it just install it
-# Removed Evolution - again: if you want a Mailprogramm, get one.
-# Standard Theme now is from MacOS: Big Sur
+# Removed Evolution - chose and install your own favorit Mailprogram
+# Removed VLC and replaced with SMPlayer due to compatibility
+# Installer changed to Calamares for compatiblity reasons
+# Standard Theme für Catalinuix now is from MacOS: Big Sur
+# For Touch-Gestures the tool "Gestures" was replaced with Fusuma
 ####################################################################
 
 To install iBuntu 1.4 Catalinux:

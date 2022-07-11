@@ -1,0 +1,20 @@
+# Ubuntu bionic
+# users
+---
+userGroup: users
+defaultGroups:
+  - cdrom
+  - floppy
+  - sudo
+  - audio
+  - dip
+  - video
+  - plugdev
+  - netdev
+  - lpadmin
+  - scanner
+  - bluetooth
+  - input
+autologinGroup: autologin
+sudoersGroup: sudo
+setRootPassword: false

@@ -17,7 +17,7 @@ then
    update-grub
    count=`expr $count + 1`
    echo $count > /usr/lib/penguins-eggs/boot_count.txt
-#   reboot
+
 fi
 
 if [ $count -gt 1 ]
@@ -27,6 +27,8 @@ then
    rm /etc/systemd/system/ibuntu_grub.service
    rm /etc/init.d/ibuntu_grub.sh
    rm -rf /home/*/Desktop/HowToInstall.txt
+   rm -rf /home/*/Desktop/install-debian.desktop
    rm -rf /usr/share/applications/reboot.desktop
+   rm -rf /usr/share/applications/install-debian.desktop
    echo "System is ready to use!"
 fi
