@@ -17,6 +17,8 @@ then
    update-grub
    count=`expr $count + 1`
    echo $count > /usr/lib/penguins-eggs/boot_count.txt
+   apt install locals --reinstall
+   
 
 fi
 
