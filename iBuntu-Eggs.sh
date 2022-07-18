@@ -70,13 +70,13 @@ sudo chmod 664 /etc/systemd/system/ib-release.service
 sudo systemctl daemon-reload
 sudo systemctl enable ib-release.service 
 
-#sudo cp $BASEDIR/conf/ibuntu_grub.service /etc/systemd/system/
-#sudo cp $BASEDIR/conf/ibuntu_grub.sh /etc/init.d/
-#sudo chmod 744 /etc/init.d/ibuntu_grub.sh
-#sudo chmod 664 /etc/systemd/system/ibuntu_grub.service
-#sudo systemctl daemon-reload
-#sudo systemctl enable ibuntu_grub.service 
-#sudo rm /usr/lib/penguins-eggs/boot_count.txt
+sudo cp $BASEDIR/conf/ibuntu_sddm.service /etc/systemd/system/
+sudo cp $BASEDIR/conf/ibuntu_sddm.sh /etc/init.d/
+sudo chmod 744 /etc/init.d/ibuntu_sddm.sh
+sudo chmod 664 /etc/systemd/system/ibuntu_sddm.service
+sudo systemctl daemon-reload
+sudo systemctl enable ibuntu_sddm.service 
+sudo rm /usr/lib/penguins-eggs/boot_count.txt
 
 #Replace the Penguines-Eggs branding and the ovary control class with the modified ones
 echo "========================================================================"

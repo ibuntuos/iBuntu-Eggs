@@ -16,7 +16,7 @@ fi
 
 set theme=/boot/grub/theme.cfg
 
-menuentry "Install {{{fullname}}}" {
+menuentry "Try and Install iBuntu 2.1 Lix Sur" {
     set gfxpayload=keep
     {{{rmModules}}}
     linux {{{vmlinuz}}} {{{kernel_parameters}}} fsck.mode=skip quiet splash --

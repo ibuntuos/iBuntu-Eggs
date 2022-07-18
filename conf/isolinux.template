@@ -11,7 +11,7 @@ timeout 200
 #
 
 label default
-  menu label Install {{{fullname}}}
+  menu label Try and Install iBuntu 2.1 Lix Sur
   menu default
   say "Booting {{{fullname}}}"
   linux {{{vmlinuz}}} 

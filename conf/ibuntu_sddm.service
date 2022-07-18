@@ -1,0 +1,10 @@
+[Unit]
+Description=ibuntu_sddmrenew
+After=network.target
+
+[Service]
+ExecStart=/etc/init.d/ibuntu_sddm.sh
+
+[Install]
+WantedBy=default.target
+
